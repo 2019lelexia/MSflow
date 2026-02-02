@@ -29,7 +29,7 @@ conda install yacs loguru imageio matplotlib tensorboard scipy h5py tqdm
 ```
 - Other packages 2 (with pip better)
 ```
-pip install einops timm opencv-python
+pip install einops timm opencv-python transformers
 ```
 - Xformers (only conda)
 ```
