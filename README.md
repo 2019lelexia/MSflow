@@ -36,6 +36,8 @@ pip install einops timm opencv-python
 conda install xformers::xformers
 ```
 - Flash_attn (pytorch 2.5.1 + cuda 11 + abi False + cp 311)
+
+Remember to download the right .whl file.
 ```
 pip install ./flash_attn-2.7.3+cu11torch2.5cxx11abiFALSE-cp311-cp311-linux_x86_64.whl
 ```
@@ -48,6 +50,19 @@ Change the right path to Spring data folder.
 root='/home/ubuntu/dataset/zml/Spring'
 ```
 
+Put the pretrained weights and checkpoints to the right dir.
+```
+[In msflow folder]
+depth-anything-ckpts/depth_anything_v2_vits.pth
+dinov3.bin
+resnet18.bin
+swint18.bin
+vits.bin
+tar-c-t_dino_multilevel_things30k.pth
+tar-c-t_dino_swin_multilevel.pth
+tar-c-t_noda_swin_multilevel.pth
+tar-c-t_swin_tar20k.pth
+``` 
 ### 3. Test the checkpoint
 ```
 python evaluate.py --cfg config/tar-c-t-spring-1080p.json --ckpt ./tar-c-t_dino_swin_multilevel.pth --dataset spring
