@@ -1,5 +1,17 @@
 ## MSFlow
 
+### -1. update @ 2026.3.30
+- add new file model/vitwarp_v8_d_bidirectionwarp.py
+
+- edit file model/__init__.py '''from model.vitwarp_v8_d_bidirectionwarp import ViTWarpV8'''
+
+- add content in model/backbone/depthanythingv2.py at Line40-66
+
+Please use the similar command to train
+```
+nohup python train.py --cfg config/tar-c-t-spring-1080p.json --restore_ckpt ./tar-c-t_dino_multilevel_things30k.pth > nohup1.out &
+```
+
 ### 0. Data preparation and val split
 In 'Spring' data folder, there will be 2 sub-folders, **train/** and **test/** after *unzip*.
 
