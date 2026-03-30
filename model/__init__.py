@@ -1,6 +1,6 @@
 import os
 import sys
-from model.vitwarp_v8_dino_multilevel import ViTWarpV8
+from model.vitwarp_v8_d_bidirectionwarp import ViTWarpV8
 
 def fetch_model(args):
     if args.algorithm == 'vitwarp':
