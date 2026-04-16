@@ -1,6 +1,6 @@
 import os
 
-def split_file(input_file, output_dir, chunk_size=90 * 1024):
+def split_file(input_file, output_dir, chunk_size=95 * 1024):
     """将大文件切分为指定大小的小块"""
     if not os.path.exists(output_dir):
         os.makedirs(output_dir)
