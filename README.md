@@ -1,5 +1,20 @@
 ## MSFlow
 
+### -2. update @ 2026.4.16
+- add new file split.py and upload.sh
+
+Edit the path in split.py
+
+```
+python split.py
+```
+
+In the model pieces dir, create a git repo, and link to the github repo
+
+```
+bash upload.sh
+```
+
 ### -1. update @ 2026.3.30
 - add new file model/vitwarp_v8_d_bidirectionwarp.py
 
